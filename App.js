@@ -10,7 +10,7 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
-mongoose.connect("mongodb+srv://Sherin:Sherin3616@cluster0.8zxvlcz.mongodb.net/journalDb?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect("mongodb+srv://username:password@cluster0.8zxvlcz.mongodb.net/journalDb?retryWrites=true&w=majority&appName=Cluster0")
 
 app.post("/journal",(request,response)=>{
     const date = String(request.body.date)
